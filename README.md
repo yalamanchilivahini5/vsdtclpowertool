@@ -29,3 +29,9 @@ Steps to run TCL code:
 2. Open the command promt and change current directory to the directory where files are there. For example  `cd D:\TCL Documents` 
 3. To run  `tclsh powercaladder.tcl`
 4. Power values are displayed on command promt window.
+
+Contact Information
+===================================
+KUNAL GHOSH at kunalpghosh@gmail.com
+PHILIPP GUHRING at 
+YALAMANCHILI VAHINI at vahini5398@gmail.com
