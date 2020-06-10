@@ -32,6 +32,12 @@ Steps to run TCL code:
 
 Contact Information
 ===================================
-- KUNAL GHOSH at kunalpghosh@gmail.com
-- PHILIPP GÜHRING at pg@futureware.at
-- YALAMANCHILI VAHINI at vahini5398@gmail.com
+- YALAMANCHILI VAHINI
+  M.tech Embedded Systems, NIT Jamshedpur
+  vahini5398@gmail.com
+- KUNAL GHOSH 
+  Director, VSD Corp. Pvt. Ltd. 
+  kunalpghosh@gmail.com
+- PHILIPP GÜHRING
+  Software Architect at LibreSilicon Association
+  pg@futureware.at
