@@ -41,3 +41,5 @@ Contact Information
 - PHILIPP GÜHRING
   Software Architect at LibreSilicon Association
   pg@futureware.at
+ - Dr. Gaurav Trivedi 
+  Co-Principal Investigator, EICT Academy, IIT Guwahati
