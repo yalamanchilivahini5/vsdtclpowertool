@@ -14,7 +14,8 @@ First install NI multisim from any available site. After steps to draw and run s
    `Simulate -> Run `
 10) Outputs are shown on simulation window.
 11) For spice netlist
-   Transfer -> Export SPICE Netlist -> Save (save in .cir extension)
+   `Transfer -> Export SPICE Netlist -> Save` (save in .cir extension)
+
 Set up to run TCL code
 ===================================
 You must have tcl compiler like Active TCL or u can run code in any online TCL compiler.
