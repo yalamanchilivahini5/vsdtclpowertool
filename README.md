@@ -1,3 +1,8 @@
+Power Analysis Tool using TCL
+===================================
+This project is trying to develop an open source power estimation tool. It mainly focuses on average switching power and leakage power.
+The analysis is based on Tool Command Language (TCL) code and takes SPICE netlist and fewer parameters as inputs and gives required power values.
+
 Set Up for Simulation
 ===================================
 First install NI multisim from any available site. After steps to draw and run schematic on NI multisim in windows are as follows:
