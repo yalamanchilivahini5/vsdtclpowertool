@@ -25,7 +25,7 @@ Set up to run TCL code
 ===================================
 You must have tcl compiler like Active TCL or u can run code in any online TCL compiler.
 Steps to run TCL code:
-1. save the code in TCL format with .tcl extension
+1. Save the code in TCL format with .tcl extension
 2. Open the command promt and change current directory to the directory where files are there. For example  `cd D:\TCL Documents` 
 3. To run  `tclsh powercaladder.tcl`
 4. Power values are displayed on command promt window.
