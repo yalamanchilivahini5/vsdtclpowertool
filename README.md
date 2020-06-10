@@ -20,7 +20,7 @@ First install NI multisim from any available site. After steps to draw and run s
 10) Outputs are shown on simulation window.
 11) For spice netlist
    `Transfer -> Export SPICE Netlist -> Save` (save in .cir extension)   
-   For 4-bit fast adder circuit Download 4bitfastadder_test, 4bitfastadder and 5inputAND .ms14 extension files from this repository in same folder and run the simulation. 
+   For 4-bit fast adder circuit Download 4bitfastadder_test, 4bitfastadder, 5inputAND and 4input AND gate .ms14 extension files from this repository in same folder and run the simulation. 
 
 Set up to run TCL code
 ===================================
