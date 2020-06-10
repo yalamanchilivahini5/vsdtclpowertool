@@ -33,13 +33,13 @@ Steps to run TCL code:
 Contact Information
 ===================================
 - YALAMANCHILI VAHINI 
-  M.tech Embedded Systems, NIT Jamshedpur
+ M.tech Embedded Systems, NIT Jamshedpur
   vahini5398@gmail.com
 - KUNAL GHOSH 
-  Director, VSD Corp. Pvt. Ltd. 
+ Director, VSD Corp. Pvt. Ltd. 
   kunalpghosh@gmail.com
 - PHILIPP GÜHRING
-  Software Architect at LibreSilicon Association
+ Software Architect at LibreSilicon Association
   pg@futureware.at
  - Dr. GAURAV TRIVEDI   
   Co-Principal Investigator, EICT Academy, IIT Guwahati
