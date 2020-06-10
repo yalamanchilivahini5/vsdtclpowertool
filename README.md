@@ -32,6 +32,6 @@ Steps to run TCL code:
 
 Contact Information
 ===================================
-KUNAL GHOSH at kunalpghosh@gmail.com
-PHILIPP GUHRING at 
-YALAMANCHILI VAHINI at vahini5398@gmail.com
+- KUNAL GHOSH at kunalpghosh@gmail.com
+- PHILIPP GUHRING at 
+- YALAMANCHILI VAHINI at vahini5398@gmail.com
