@@ -42,4 +42,6 @@ Contact Information
 Software Architect at LibreSilicon Association
   pg@futureware.at
  - Dr. GAURAV TRIVEDI 
- Co-Principal Investigator, EICT Academy, IIT Guwahati
+ Co-Principal Investigator, EICT Academy,   
+  and Associative Professor, EEE Department, IIT Guwahati
+  trivedi@iitg.ac.in
