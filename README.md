@@ -13,6 +13,7 @@ Steps to draw and run schematic on NI multisim in windows:
 10) Outputs are shown on simulation window.
 11) For spice netlist
    Transfer -> Export SPICE Netlist -> Save (save in .cir extension)
+
 Steps to run TCL code:
 1. save the code in TCL format with .tcl extension
 2. Open the command promt and change current directory to the directory where files are there.
