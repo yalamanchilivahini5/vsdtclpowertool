@@ -38,8 +38,8 @@ Contact Information
 - KUNAL GHOSH 
  Director, VSD Corp. Pvt. Ltd. 
   kunalpghosh@gmail.com
-- PHILIPP GÜHRING
- Software Architect at LibreSilicon Association
+- PHILIPP GÜHRING 
+Software Architect at LibreSilicon Association
   pg@futureware.at
- - Dr. GAURAV TRIVEDI   
-  Co-Principal Investigator, EICT Academy, IIT Guwahati
+ - Dr. GAURAV TRIVEDI 
+ Co-Principal Investigator, EICT Academy, IIT Guwahati
