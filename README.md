@@ -24,7 +24,7 @@ First install NI multisim from any available site. After steps to draw and run s
 
 Set up to run TCL code
 ===================================
-You must have tcl compiler like Active TCL or u can run code in any online TCL compiler.
+You must have tcl compiler like Active TCL or you can run code in any online TCL compiler.
 Steps to run TCL code:
 1. Save the code in TCL format with .tcl extension
 2. Open the command promt and change current directory to the directory where files are there. For example  `cd D:\TCL Documents` 
