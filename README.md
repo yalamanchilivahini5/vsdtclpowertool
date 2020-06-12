@@ -3,9 +3,13 @@ Power Analysis Tool using TCL
 This project is trying to develop an open source power estimation tool. It mainly focuses on average switching power and leakage power.
 The analysis is based on Tool Command Language (TCL) code and takes SPICE netlist and fewer parameters as inputs and gives required power values.
 
-Set Up for Simulation
+Set Up for NI Multisim in windows
 ===================================
-First install NI multisim from any available site. After steps to draw and run schematic on NI multisim in windows are as follows:
+1) Download NI Multisim 14.1 from https://softfamous.com/ni-multisim/download/ 
+2) Click on `Download from ni.com -> GET STUDENT DOWNLOAD`
+3) Unzip the compressed folder and save in preferred folder.
+4) Open `setup.exe` file and install.
+## Steps to draw and run schematic on NI multisim in windows are as follows:
 1) Open NI Multisim 14.1 from start menu
 2) click on Launch Multisim
 3) `File -> New -> Create `
@@ -23,7 +27,7 @@ First install NI multisim from any available site. After steps to draw and run s
    For 4-bit fast adder circuit Download `4bitfastadder_test, 4bitfastadder, 5inputAND and 4 input AND gate .ms14` extension files from this repository in same folder and run the simulation. 
 
 Set up to run TCL code
-===================================
+=======================
 You must have tcl compiler like Active TCL or you can run code in any online TCL compiler.
 Steps to run TCL code:
 1. Save the code in TCL format with .tcl extension
@@ -32,7 +36,7 @@ Steps to run TCL code:
 4. Power values are displayed on command promt window.
 
 Contact Information
-===================================
+====================
 - YALAMANCHILI VAHINI 
  M.tech Embedded Systems, NIT Jamshedpur
   vahini5398@gmail.com
