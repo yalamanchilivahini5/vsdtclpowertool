@@ -9,7 +9,7 @@ Set Up for NI Multisim in windows
 2) Click on `Download from ni.com -> GET STUDENT DOWNLOAD`
 3) Unzip the compressed folder and save in preferred folder.
 4) Open `setup.exe` file and install.
-## Steps to draw and run schematic on NI multisim in windows are as follows:
+## Steps to draw and run schematic on NI multisim in windows
 1) Open NI Multisim 14.1 from start menu
 2) click on Launch Multisim
 3) `File -> New -> Create `
