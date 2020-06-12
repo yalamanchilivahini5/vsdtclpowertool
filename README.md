@@ -7,13 +7,12 @@ Set Up for NI Multisim in windows
 ===================================
 1) Download NI Multisim 14.1 from https://softfamous.com/ni-multisim/download/ 
 2) Click on `Download from ni.com -> GET STUDENT DOWNLOAD`
- ![NI download 1](https://user-images.githubusercontent.com/66675990/84494289-d9744800-acc6-11ea-91a3-938bc8146741.JPG)
- 
+ ![NI download 1](https://user-images.githubusercontent.com/66675990/84494289-d9744800-acc6-11ea-91a3-938bc8146741.JPG = 50x50)
 3) Unzip the compressed folder and save in preferred folder.
 4) Open `setup.exe` file and install.
 ## Steps to draw and run schematic on NI multisim in windows
 1) Open NI Multisim 14.1 from start menu
-2) click on Launch Multisim
+2) click on Launch Multisimhttps://user-images.githubusercontent.com/66675990/84494606-733bf500-acc7-11ea-9087-33ec26cde735.JPG
 3) `File -> New -> Create `
 4) Draw schematic and save(Ctrl +S)
 5) Schematic file will be saved in .ms14 format
@@ -31,7 +30,7 @@ Set Up for NI Multisim in windows
 Set up to run TCL code
 =======================
 You must have tcl compiler like Active TCL or you can run code in any online TCL compiler.
-Steps to run TCL code:
+Steps to run TCL co
 1. Save the code in TCL format with .tcl extension
 2. Open the command promt and change current directory to the directory where files are there. For example  `cd D:\TCL Documents` 
 3. To run  `tclsh powercaladder.tcl`
