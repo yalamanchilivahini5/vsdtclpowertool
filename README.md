@@ -7,6 +7,8 @@ Set Up for NI Multisim in windows
 ===================================
 1) Download NI Multisim 14.1 from https://softfamous.com/ni-multisim/download/ 
 2) Click on `Download from ni.com -> GET STUDENT DOWNLOAD`
+ <img align="right" src="image/NI download 1.jpg" width="55%">
+ [!Download NI multisim](/Pictures/NI download 1.jpg)
 3) Unzip the compressed folder and save in preferred folder.
 4) Open `setup.exe` file and install.
 ## Steps to draw and run schematic on NI multisim in windows
