@@ -14,7 +14,7 @@ Set Up for NI Multisim in windows
 4) Unzip the compressed folder and save in preferred folder.     
 5) Open `setup.exe` file and install.
 
-**Note: NI Multisim can be downloaded only in windows OS. For MAC OS or LINUX users, Windows OS have to be installed using virtual machine or can use MULTISIM LIVE online https://www.multisim.com/
+**Note: NI Multisim can be downloaded only on windows OS. For MAC OS or LINUX users, Windows OS have to be installed using virtual machine or can use MULTISIM LIVE online https://www.multisim.com/
 
 ## Steps to draw and run schematic on NI multisim in windows
 1) Open NI Multisim 14.1 from start menu
