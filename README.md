@@ -8,7 +8,7 @@ Set Up for NI Multisim in windows
 1) Download NI Multisim 14.1 from https://softfamous.com/ni-multisim/download/
 2) Click on `Download from ni.com ` 
   <img align ="left" src="https://user-images.githubusercontent.com/66675990/84494289-d9744800-acc6-11ea-91a3-938bc8146741.JPG" width= "250" >  
-   <img align ="center" src="https://user-images.githubusercontent.com/66675990/84496533-b9df1e80-acca-11ea-9606-0a4dd1d316c9.JPG" width="250" >     
+   <img align ="center" src="https://user-images.githubusercontent.com/66675990/84496533-b9df1e80-acca-11ea-9606-0a4dd1d316c9.JPG" width="250" >  \  
    
 3) Click on `GET STUDENT DOWNLOAD `   
 4) Unzip the compressed folder and save in preferred folder.     
@@ -26,12 +26,15 @@ Set Up for NI Multisim in windows
 8) Choose required analysis and enter variables and choose parameters to be displayed .
 9) To run 
    `Simulate -> Run `
+   
+   <img align ="right" src= "https://user-images.githubusercontent.com/66675990/84498900-19d7c400-accf-11ea-9578-a5bc275acd94.JPG" width=" 200"> \  
+   
 10) Outputs are shown on simulation window.
 11) For spice netlist
    `Transfer -> Export SPICE Netlist -> Save` (save in .cir extension)   
-   <img align ="right" src= "https://user-images.githubusercontent.com/66675990/84498900-19d7c400-accf-11ea-9578-a5bc275acd94.JPG" width=" 200">
-   For 4-bit fast adder circuit Download `4bitfastadder_test, 4bitfastadder, 5inputAND and 4 input AND gate .ms14` 
-   extension files from this repository in same folder and run the simulation.  
+   
+   For 4-bit fast adder circuit shown in figure, Download `4bitfastadder_test, 4bitfastadder, 5inputAND and 4 input AND gate .ms14` 
+   extension files from this repository in same folder and run the simulation.   
    
 Set up to run TCL code
 =======================
