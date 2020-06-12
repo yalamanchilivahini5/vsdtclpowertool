@@ -14,23 +14,24 @@ Set Up for NI Multisim in windows
 4) Unzip the compressed folder and save in preferred folder.     
 5) Open `setup.exe` file and install.
 
+**Note: NI Multisim can be downloaded only in windows OS. For MAC OS or LINUX users, Windows OS have to be installed using virtual machine or can use MULTISIM LIVE online https://www.multisim.com/
+
 ## Steps to draw and run schematic on NI multisim in windows
 1) Open NI Multisim 14.1 from start menu
-2) click on Launch Multisimhttps://user-images.githubusercontent.com/66675990/84494606-733bf500-acc7-11ea-9087-33ec26cde735.JPG
-3) `File -> New -> Create `
-4) Draw schematic and save(Ctrl +S)
-5) Schematic file will be saved in .ms14 format
-6) To open file whch is already created
+2) `File -> New -> Create `
+3) Draw schematic and save(Ctrl +S)
+4) Schematic file will be saved in .ms14 format
+5) To open file whch is already created
    `File -> Open -> choose schematic file in .ms14 extension` 
-7) Go to` Simulate -> Analyses and simulation` 
-8) Choose required analysis and enter variables and choose parameters to be displayed .
-9) To run 
+6) Go to` Simulate -> Analyses and simulation` 
+7) Choose required analysis and enter variables and choose parameters to be displayed .
+8) To run 
    `Simulate -> Run `
    
    <img align ="right" src= "https://user-images.githubusercontent.com/66675990/84498900-19d7c400-accf-11ea-9578-a5bc275acd94.JPG" width=" 200">   
    
-10) Outputs are shown on simulation window.
-11) For spice netlist
+9) Outputs are shown on simulation window.
+10) For spice netlist
    `Transfer -> Export SPICE Netlist -> Save` (save in .cir extension)   
    
    For 4-bit fast adder circuit shown in figure, Download `4bitfastadder_test, 4bitfastadder, 5inputAND and 4 input AND gate .ms14` 
