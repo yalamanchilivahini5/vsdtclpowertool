@@ -50,6 +50,9 @@ Steps to run TCL co
 
 4. Power values are displayed on command promt window.
 
+  To get cmos inverter and 4-bit adder power values, Download powercal.tcl and powercaladder.tcl respectively from this repository and run TCL codes. 
+  **Note: TCL codes written are not final. They will be modified to get better results.
+
 Contact Information
 ====================
 - YALAMANCHILI VAHINI 
