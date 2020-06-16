@@ -1,0 +1,17 @@
+Kang Inverter 
+mn 3 2 0 0 nmod w=10u l=1u
+mp 3 2 4 1 pmod w=20u l=1u
+vdd 1 0 5
+vtstp 1 4 0
+.model nmod nmos (vto = 1 kp = 20u)
+.model pmod pmos (vto = -1 kp = 10u)
+vin 2 0 pulse(0 5 8n 2n 2n 8n 20n)
+c1 3 0 1p
+f1 0 9 vtstp 0.025
+rp 9 0 100k
+cp 9 0 100p
+.tran 1n 60n uic
+.print tran v(3) v(2)
+.print tran i(vtstp)
+.print tran v(9)
+.end
