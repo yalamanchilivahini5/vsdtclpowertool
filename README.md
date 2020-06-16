@@ -44,7 +44,8 @@ You must have tcl compiler like Active TCL or you can run code in any online TCL
 Steps to run TCL co
 1. Save the code in TCL format with .tcl extension
 2. Open the command promt and change current directory to the directory where files are there. For example  `cd D:\TCL Documents` 
-3. To run  `tclsh powercaladder.tcl`
+4. To run in ubuntu open terminal.
+3. Run `tclsh powercaladder.tcl`
 
 <img src= "https://user-images.githubusercontent.com/66675990/84500623-8b654180-acd2-11ea-8de4-231f08158b59.JPG" width ="300">
 
