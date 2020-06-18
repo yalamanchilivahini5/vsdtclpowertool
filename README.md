@@ -38,6 +38,14 @@ Set Up for NI Multisim in windows
    For 4-bit fast adder circuit shown in figure, Download "4bit adder multisim"  from this repository 
    and run `4bitfastadder_test.ms14`  simulation. 
    
+Set up for NGSPICE
+==================
+ NGSPICE is an open source Spice simulator which gives outputs from SPICE Netlist code.
+ - For installing ngspice in ubuntu
+ ```
+ $ sudo apt-get install ngspice
+ ```
+ - To run ".cir" file, `ngspice cmos_inv.cir`
 Set up to run TCL code
 =======================
 You must have tcl compiler like Active TCL or you can run code in any online TCL compiler.
@@ -53,7 +61,7 @@ Steps to run TCL co
 
   To get cmos inverter and 4-bit adder power values, Download powercal.tcl and powercaladder.tcl respectively from this repository and run TCL codes. 
   
-  **Note: TCL codes written are not final. They will be modified to get better results.
+  **Note: TCL codes written are not final and yet to be modified to get better results.
 
 Contact Information
 ====================
