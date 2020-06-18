@@ -1,7 +1,8 @@
 SPICE INV2
-M1 2 3 1 1 CMOSP l=0.18u w=0.2u
+M1 2 3 4 4 CMOSP l=0.18u w=0.2u
 M2 2 3 0 0 CMOSN l=0.18u w=0.1u
 V2 1 0 1.8
+VD 4 1 0
 V1 3 0 PULSE(0 1.8 0 1n 1n 10n 20n)
 C1f 2 0 1f
 
@@ -92,5 +93,6 @@ c1 2 0 1e-015
 .control
 run
 plot V(3) V(2)
+print I(VD)*V(1)
 .endc
 .end
