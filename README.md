@@ -46,6 +46,7 @@ Set up for NGSPICE
  $ sudo apt-get install ngspice
  ```
  - To run ".cir" file, `ngspice cmos_inv.cir`
+
 Set up to run TCL code
 =======================
 You must have tcl compiler like Active TCL or you can run code in any online TCL compiler.
