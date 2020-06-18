@@ -15,7 +15,7 @@ Set Up for NI Multisim in windows
 3) Unzip the compressed folder and save in preferred folder.   <br/>     
 4) Open `setup.exe` file and install.
 
-**Note: NI Multisim can be downloaded only on windows OS. For MAC OS or LINUX users, Windows OS have to be installed using virtual machine or can use online MULTISIM LIVE https://www.multisim.com/
+**Note: NI Multisim can be downloaded only on windows OS. For MAC OS or LINUX users, Windows OS have to be installed using virtual machine or can use online [MULTISIM LIVE](https://www.multisim.com/) or can run using [WINE](https://www.winehq.org/)
 
 ## Steps to draw and run schematic on NI multisim in windows  
 1) Open NI Multisim 14.1 from start menu
@@ -35,8 +35,8 @@ Set Up for NI Multisim in windows
 10) For spice netlist
    `Transfer -> Export SPICE Netlist -> Save` (save in .cir extension)   
    
-   For 4-bit fast adder circuit shown in figure, Download `4bitfastadder_test, 4bitfastadder, 5inputAND and 4 input AND gate .ms14` 
-   extension files from this repository in same folder and run the simulation.   
+   For 4-bit fast adder circuit shown in figure, Download "4bit adder multisim"  from this repository 
+   and run `4bitfastadder_test.ms14`  simulation. 
    
 Set up to run TCL code
 =======================
@@ -44,7 +44,7 @@ You must have tcl compiler like Active TCL or you can run code in any online TCL
 Steps to run TCL co
 1. Save the code in TCL format with .tcl extension
 2. Open the command promt and change current directory to the directory where files are there. For example  `cd D:\TCL Documents` 
-4. To run in ubuntu open terminal.
+4. To run in ubuntu open terminal `Applications -> Terminal`.
 3. Run `tclsh powercaladder.tcl`
 
 <img src= "https://user-images.githubusercontent.com/66675990/84500623-8b654180-acd2-11ea-8de4-231f08158b59.JPG" width ="300">
