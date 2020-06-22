@@ -3,6 +3,20 @@ Power Analysis Tool using TCL
 This project is trying to develop an open source power estimation tool. It mainly focuses on average switching power and leakage power.
 The analysis is based on Tool Command Language (TCL) code and takes SPICE netlist and fewer parameters as inputs and gives required power values.
 
+Table of contents
+=================
+
+<!--ts-->
+   * [Power Analysis Tool using TCL](#power-analysis-tool-using-tcl)
+   * [Table of contents](#table-of-contents)
+   * [Setup for Ngspice](#setup-for-ngspice)
+   * [Setup to run TCL codes](#setup-to-run-tcl-codes)
+   * [Steps to run Local files](#steps-to-run-local-files)
+      * [CMOS Inverter](#cmos-inverter)
+      * [One-bit Fast Adder](#one-bit-fast-adder)
+   * [Contact Information](#contact-information)
+<!--te-->
+
 Set Up for NI Multisim in windows
 ===================================
 1) Download NI Multisim 14.1 from https://softfamous.com/ni-multisim/download/
@@ -49,11 +63,12 @@ Set up for NGSPICE
 
 Set up to run TCL code
 =======================
-You must have tcl compiler like Active TCL or you can run code in any online TCL compiler.
-Steps to run TCL co
+Most of linux/Unix systems have inbuilt tcl. For windows OS, one must have tcl compiler like Active TCL.
+If already not installed, open terminal and enter `sudo apt-get install tcl` to install TCL.
+
+## Steps to run TCL code
 1. Save the code in TCL format with .tcl extension
-2. Open the command promt and change current directory to the directory where files are there. For example  `cd D:\TCL Documents` 
-4. To run in ubuntu open terminal `Applications -> Terminal`.
+2. Open the command promt (windows OS) or terminal (Ubuntu) and change current directory to the directory where files are there. For example  `cd D:\TCL Documents` 
 3. Run `tclsh powercaladder.tcl`
 
 <img src= "https://user-images.githubusercontent.com/66675990/84500623-8b654180-acd2-11ea-8de4-231f08158b59.JPG" width ="300">
@@ -62,8 +77,14 @@ Steps to run TCL co
 
   To get cmos inverter and 4-bit adder power values, Download powercal.tcl and powercaladder.tcl respectively from this repository and run TCL codes. 
   
-  **Note: TCL codes written are not final and yet to be modified to get better results.
-
+  **Note: These TCL codes are just for basic calculation, not full-pledged codes.
+  
+# Steps to run Local files
+First download or clone this repository `git clone https://github.com/yalamanchilivahini5/intern_poweranalysis_TCL.git`
+## CMOS Inverter
+ 1) cd ngspice_Inverter
+ 2) $ ngspice inv_spec.cir
+ 
 Contact Information
 ====================
 - YALAMANCHILI VAHINI 
