@@ -37,7 +37,7 @@ set  avgpwr [expr "$avgpwr/[expr "$rownum -1"]"]
 puts "Average power is $avgpwr"
 # Optimization suggestion
 if {$avgpwr >= 1e-4} {
-puts "Heavy Leakage Power. Circuit need to be Optimized"
+puts "Heavy Power. Circuit need to be Optimized"
 } 
 
 close $FileInput
