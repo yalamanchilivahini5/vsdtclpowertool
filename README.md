@@ -75,7 +75,7 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
   ```
   **Checking output text file in directory**
      
-   <img align="center" width="300"  src="/Images/inv_outfile.JPG">
+   <img align="center" width="500"  src="/Images/inv_outfile.JPG">
   
  4) To find average power run TCL code
     ```
@@ -86,7 +86,7 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
     
    **Average power from TCL code**
     
-   <img align="center" width="300"  src="/Images/inv_tclpwr.JPG">
+   <img align="center" width="500"  src="/Images/inv_tclpwr.JPG">
     
  7) To get average power directly from SPICE simulation,
  
@@ -106,7 +106,7 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
    
   **Leakage Power of CMOS Inverter**
   
-   <img align="center" width="300"  src="/Images/inv_lkgpwr.JPG">
+   <img align="center" width="500"  src="/Images/inv_lkgpwr.JPG">
   
   
  ### One-bit Fast Adder 
