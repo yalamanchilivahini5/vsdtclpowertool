@@ -94,9 +94,9 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
   $ ngspice inv_pwr.cir
   ```
    
-   **Voltage at 20ns gives average power **   
-    
-   <img align="center" width="500" src="/Images/inv_avgpwr.JPG">
+   **Voltage at 20ns gives average power**   
+     
+  <img align="center" width="500" src="/Images/inv_avgpwr.JPG">
   
  8) To get leakage power value of CMOS Inverter
 
@@ -114,16 +114,15 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
   1) Go to 'NGspice power folder' to run simulations. 
    `$ cd Ngspice\ power/`
  2)  Run 1-bit adder Netlist to get output waveforms.
-   `$ ngspice 1bitadder_wr.cir`
-   
-   **Inputs A, B, Cin and Outputs S, Cout **
-   
-   <img align="center" width="800" src="/Images/1bitadder_inout.JPG">  
+   `$ ngspice 1bitadder_wr.cir`  
  
+   **Inputs A, B, Cin and Outputs S, Cout**  
+ 
+ <img align="center" width="900" src="/Images/1bitadder_inout.JPG">  
  
   **Power plot**
   
-  <img align="center" width="500"  src="/Images/1bitadder_pwr.JPG">
+  <img align="center" width="600"  src="/Images/1bitadder_pwr.JPG">
   
  3) The netlist writes output data into text file namely **outadder.txt**. 
   To check text file  `$ ls -ltr` 
