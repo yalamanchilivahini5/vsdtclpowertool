@@ -135,7 +135,7 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
  4) To find average power run TCL code
     `$ tclsh avgpwr.tcl`  
  5)  Enter the output file name that occurs afer ngspice simulation. Here `outadder.txt`
- 6) Average value is displayed. 
+ 6) Average value is displayed with optimization suggestion. 
  **Average power from TCL code**
  
  <img align="center" width="500"  src="/Images/1bitadder_tclpwr.JPG">
