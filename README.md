@@ -13,7 +13,8 @@ Table of contents
    * [Setup to run TCL code](#setup-to-run-tcl-code)
    * [Steps to run Local files](#steps-to-run-local-files)
       * [CMOS Inverter](#cmos-inverter)
-      * [Onebit Fast Adder](#one-bit-fast-adder)
+      * [One-bit Fast Adder](#one-bit-fast-adder)
+   * [SetUp for NI Multisim in windows](#set-up-for-NI-Multisim-in-windows) 
    * [Contact Information](#contact-information)
 <!--te-->
 
@@ -32,7 +33,7 @@ Setup for NGSPICE
  - To come out of Ngspice shell
   ` ngspice 3 -> exit` or `ngspice 3 -> quit`
   
-Set up to run TCL code
+Setup to run TCL code
 =======================
 Most of linux/Unix systems have inbuilt tcl. For windows OS, one must have tcl compiler like Active TCL.
 If already not installed, open terminal and enter `sudo apt-get install tcl` to install TCL.
@@ -50,18 +51,86 @@ If already not installed, open terminal and enter `sudo apt-get install tcl` to 
 
   To get cmos inverter and 4-bit adder power values, Download *powercal.tcl* and *powercaladder.tcl* respectively from this repository and run TCL codes. 
   
-  **Note: *These TCL codes are just for basic calculation, not full-pledged codes.*
+  ####  ***Note: These TCL codes are just for basic calculation, not full-pledged codes.*
   
 # Steps to run Local files
 First download or clone this repository `git clone https://github.com/yalamanchilivahini5/intern_poweranalysis_TCL.git`
-## CMOS Inverter
- 1)  To run CMOS Inverter simulations `cd ngspice_simulations`
- 2) `$ ngspice inv_spec.cir`
- 3)  `plot V(2) V(3)` 
+Here are the steps for circuits simulation and run tcl codes to obtain power values.
+### CMOS Inverter
+ 1) Go to 'NGspice power folder' to run simulations. 
+   ```
+    $ cd Ngspice\ power/
+   ```
+ 2)  Run inverter Netlist to get output waveforms.
+   ```
+   $ ngspice inv_wr.cir
+   ```
+   **Inverter Transient analysis**    
+  <img align=center" width="800" height="500" src="/Images/inv_tran_pwr.JPG">
+  
+ 3) The netlist writes output data into text file namely *`outinv.txt`*. 
+  To check text file  
+  ```
+  $ ls -ltr
+  ```
+  **Checking output text file in directory**
+   <img align=center" width="800" height="500" src="/Images/inv_outfile.JPG">
+  
+ 4) To find average power run TCL code
+    ```
+    $ tclsh avgpwr.tcl
+    ``` 
+ 5)  Enter the output file name that occurs afer ngspice simulation. Here `outinv.txt`
+ 6)  Average value is displayed.
+    **Average power from TCL code**
+    <img align=center" width="800" height="500" src="/Images/inv_tclpwr.JPG">
+ 7) To get average power directly from SPICE simulation,
  
- 
-Set Up for NI Multisim in windows
-===================================
+ ```
+  $ ngspice inv_pwr.cir
+  ```
+   
+   **Voltage at 20ns gives average power **   
+   <img align=center" width="800" height="500" src="/Images/inv_avgpwr.JPG">
+  
+ 8) To get leakage power value of CMOS Inverter
+
+```
+ $ ngspice inv_lpwr.cir 
+```
+   
+  **Leakage Power of CMOS Inverter**
+  <img align=center" width="800" height="500" src="/Images/inv_lkgpwr.JPG">
+  
+  
+ ### One-bit Fast Adder 
+  Follow same steps to run simulation of '1-bit fast adder'. 
+  1) Go to 'NGspice power folder' to run simulations. 
+   `$ cd Ngspice\ power/`
+ 2)  Run 1-bit adder Netlist to get output waveforms.
+   `$ ngspice 1bitadder_wr.cir`
+   
+   **Inputs A, B, Cin and Outputs S, Cout **
+   <img align=center" width="800" height="500" src="/Images/1bitadder_inout.JPG">  
+  
+  **Power plot**
+  <img align=center" width="800" height="500" src="/Images/1bitadder_pwr.JPG">
+  
+ 3) The netlist writes output data into text file namely **outadder.txt**. 
+  To check text file  `$ ls -ltr` 
+  
+   **Checking output text file in directory**
+   <img align=center" width="800" height="500" src="/Images/1bitadder_outfile.JPG">
+  
+ 4) To find average power run TCL code
+    `$ tclsh avgpwr.tcl`  
+ 5)  Enter the output file name that occurs afer ngspice simulation. Here `outadder.txt`
+ 6) Average value is displayed. 
+ **Average power from TCL code**
+ <img align=center" width="800" height="500" src="/Images/1bitadder_tclpwr.JPG">
+  
+SetUp for NI Multisim in windows
+=================================
 1) Download NI Multisim 14.1 from https://softfamous.com/ni-multisim/download/
 2) Click on `Download from ni.com -> GET STUDENT DOWNLOAD  ` 
 <br/>
@@ -85,14 +154,13 @@ Set Up for NI Multisim in windows
 7) Choose required analysis and enter variables and choose parameters to be displayed .
 8) To run 
    `Simulate -> Run `
-   
-   <img align ="right" src= "https://user-images.githubusercontent.com/66675990/84498900-19d7c400-accf-11ea-9578-a5bc275acd94.JPG" width=" 200">   
+   <img align ="right" width="200" src="/4bit adder multisim/4bit fast adder simckt 1.JPG"> 
    
 9) Outputs are shown on simulation window.
 10) For spice netlist
    `Transfer -> Export SPICE Netlist -> Save` (save in .cir extension)   
    
-   For 4-bit fast adder circuit shown in figure, Download "4bit adder multisim"  from this repository 
+   For 4-bit fast adder circuit shown in figure, Go to `Multisim_simulation -> 4bit adder multisim`  from this repository 
    and run `4bitfastadder_test.ms14`  simulation. 
    
 
