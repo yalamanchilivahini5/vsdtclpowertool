@@ -13,8 +13,7 @@ Table of contents
    * [Setup to run TCL code](#setup-to-run-tcl-code)
    * [Steps to run Local files](#steps-to-run-local-files)
       * [CMOS Inverter](#cmos-inverter)
-      * [One-bit Fast Adder](#one-bit-fast-adder)
-   * [SetUp for NI Multisim in windows](#set-up-for-NI-Multisim-in-windows) 
+      * [One-bit Fast Adder](#one-bit-fast-adder) 
    * [Contact Information](#contact-information)
 <!--te-->
 
@@ -45,7 +44,7 @@ If already not installed, open terminal and enter `sudo apt-get install tcl` to 
 3. To run `> tclsh <filename>.tcl` 
  For example `tclsh powercaladder.tcl`
 
-<img src= "https://user-images.githubusercontent.com/66675990/84500623-8b654180-acd2-11ea-8de4-231f08158b59.JPG" width ="300">
+   <img src= "https://user-images.githubusercontent.com/66675990/84500623-8b654180-acd2-11ea-8de4-231f08158b59.JPG" width ="300">
 
 4. Power values are displayed on command promt window.
 
@@ -66,7 +65,8 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
    $ ngspice inv_wr.cir
    ```
    **Inverter Transient analysis**    
-  <img align=center" width="800" height="500" src="/Images/inv_tran_pwr.JPG">
+    
+   <img align="center" width="500"  src="/Images/inv_tran_pwr.JPG">
   
  3) The netlist writes output data into text file namely *`outinv.txt`*. 
   To check text file  
@@ -74,7 +74,8 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
   $ ls -ltr
   ```
   **Checking output text file in directory**
-   <img align=center" width="800" height="500" src="/Images/inv_outfile.JPG">
+     
+   <img align="center" width="300"  src="/Images/inv_outfile.JPG">
   
  4) To find average power run TCL code
     ```
@@ -82,8 +83,11 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
     ``` 
  5)  Enter the output file name that occurs afer ngspice simulation. Here `outinv.txt`
  6)  Average value is displayed.
-    **Average power from TCL code**
-    <img align=center" width="800" height="500" src="/Images/inv_tclpwr.JPG">
+    
+   **Average power from TCL code**
+    
+   <img align="center" width="300"  src="/Images/inv_tclpwr.JPG">
+    
  7) To get average power directly from SPICE simulation,
  
  ```
@@ -91,7 +95,8 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
   ```
    
    **Voltage at 20ns gives average power **   
-   <img align=center" width="800" height="500" src="/Images/inv_avgpwr.JPG">
+    
+   <img align="center" width="500" src="/Images/inv_avgpwr.JPG">
   
  8) To get leakage power value of CMOS Inverter
 
@@ -100,7 +105,8 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
 ```
    
   **Leakage Power of CMOS Inverter**
-  <img align=center" width="800" height="500" src="/Images/inv_lkgpwr.JPG">
+  
+   <img align="center" width="300"  src="/Images/inv_lkgpwr.JPG">
   
   
  ### One-bit Fast Adder 
@@ -111,23 +117,28 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
    `$ ngspice 1bitadder_wr.cir`
    
    **Inputs A, B, Cin and Outputs S, Cout **
-   <img align=center" width="800" height="500" src="/Images/1bitadder_inout.JPG">  
-  
+   
+   <img align="center" width="800" src="/Images/1bitadder_inout.JPG">  
+ 
+ 
   **Power plot**
-  <img align=center" width="800" height="500" src="/Images/1bitadder_pwr.JPG">
+  
+  <img align="center" width="500"  src="/Images/1bitadder_pwr.JPG">
   
  3) The netlist writes output data into text file namely **outadder.txt**. 
   To check text file  `$ ls -ltr` 
   
    **Checking output text file in directory**
-   <img align=center" width="800" height="500" src="/Images/1bitadder_outfile.JPG">
+   
+   <img align="center" width="500"  src="/Images/1bitadder_outfile.JPG">
   
  4) To find average power run TCL code
     `$ tclsh avgpwr.tcl`  
  5)  Enter the output file name that occurs afer ngspice simulation. Here `outadder.txt`
  6) Average value is displayed. 
  **Average power from TCL code**
- <img align=center" width="800" height="500" src="/Images/1bitadder_tclpwr.JPG">
+ 
+ <img align="center" width="500"  src="/Images/1bitadder_tclpwr.JPG">
   
 SetUp for NI Multisim in windows
 =================================
