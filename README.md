@@ -13,7 +13,8 @@ Table of contents
    * [Setup to run TCL code](#setup-to-run-tcl-code)
    * [Steps to run Local files](#steps-to-run-local-files)
       * [CMOS Inverter](#cmos-inverter)
-      * [One-bit Fast Adder](#one-bit-fast-adder) 
+      * [One-bit Fast Adder](#one-bit-fast-adder)
+   * [SetUp for NI Multisim in windows](#setup-for-ni-multisim-in-windows)
    * [Contact Information](#contact-information)
 <!--te-->
 
@@ -64,7 +65,7 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
    ```
    $ ngspice inv_wr.cir
    ```
-   **Inverter Transient analysis**    
+   **Inverter Transient analysis and power plot**    
     
    <img align="center" width="500"  src="/Images/inv_tran_pwr.JPG">
   
@@ -164,13 +165,13 @@ SetUp for NI Multisim in windows
 7) Choose required analysis and enter variables and choose parameters to be displayed .
 8) To run 
    `Simulate -> Run `
-   <img align ="right" width="200" src="/4bit adder multisim/4bit fast adder simckt 1.JPG"> 
+   <img align ="right" width="200" src="/Multisim_simulation/4bit adder multisim/4bit fast adder simckt 1.JPG"> 
    
 9) Outputs are shown on simulation window.
 10) For spice netlist
    `Transfer -> Export SPICE Netlist -> Save` (save in .cir extension)   
    
-   For 4-bit fast adder circuit shown in figure, Go to `Multisim_simulation -> 4bit adder multisim`  from this repository 
+   For 4-bit fast adder circuit shown in figure, Go to `Multisim_simulation -> 4bit adder multisim`  from this repository
    and run `4bitfastadder_test.ms14`  simulation. 
    
 
