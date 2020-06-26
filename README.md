@@ -14,6 +14,7 @@ Table of contents
    * [Steps to run Local files](#steps-to-run-local-files)
       * [CMOS Inverter](#cmos-inverter)
       * [One-bit Fast Adder](#one-bit-fast-adder)
+   * [Comparing Power Tools](#comparing-power-tools)
    * [SetUp for NI Multisim in windows](#setup-for-ni-multisim-in-windows)
    * [Contact Information](#contact-information)
 <!--te-->
@@ -56,6 +57,31 @@ If already not installed, open terminal and enter `sudo apt-get install tcl` to 
 # Steps to run Local files
 First download or clone this repository `git clone https://github.com/yalamanchilivahini5/intern_poweranalysis_TCL.git`
 Here are the steps for circuits simulation and run tcl codes to obtain power values.
+
+#### Direct simulation from code
+Without entering into shell, from TCL code one can run netlist codes.
+1. Go to Ngspice power folder
+
+```
+$ cd Ngspice\ power/
+```
+
+2. Run TCL code *spicelaunch.tcl*
+
+```
+$ tclsh spicelaunch.tcl
+```
+
+3. Enter the netlist file with extension `.cir` which has to be simulated like `inv_wr.cir` 
+4. To get average value, Run TCL code `avgpwr.tcl`
+
+```
+$ tclsh avgpwr.tcl
+```
+
+5. Enter the output text file name with `.txt` extension written in simulated file like `outinv.txt`
+6. Average power value is displayed.
+
 ### CMOS Inverter
  1) Go to 'NGspice power folder' to run simulations. 
    ```
