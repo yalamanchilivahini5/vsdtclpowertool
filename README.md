@@ -140,6 +140,14 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
 **Average power from TCL code**
  
  <img align="center" width="500"  src="/Images/1bitadder_tclpwr.JPG">
+ 
+ ## Comparing Power Tools 
+ The comparison of this TCL tool and Python tool is presented in an excel sheet *Comparing power tools_charu and vahini*.
+ 
+ **Comparison table of power tools**
+ 
+ <img align="center" width="600"  src="/Images/Comparing_powertools.JPG">
+ 
   
 SetUp for NI Multisim in windows
 =================================
