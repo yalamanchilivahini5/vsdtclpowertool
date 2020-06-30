@@ -76,7 +76,10 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
    ```
    $ tclsh usage.tcl
    ```
-
+   **TCL code**
+ 
+   <img align="center" width="500"  src="/Images/usagetcl.jpg">
+  
  4) Modify the netlist and save switching power netlist and leakage power netlist into two individual files.
  5) Now run the switching power netlist such as `inv_pwr.cir` 
  
@@ -109,7 +112,7 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
  
    **Inputs A, B, Cin and Outputs S, Cout**  
  
-    <img align="center" width="900" src="/Images/1bitadder_inout.JPG">  
+   <img align="center" width="900" src="/Images/1bitadder_inout.JPG">  
   
   3) To get steps for calculating average switching power and leakage power, run TCL code `usage.tcl` and enter required values.
    ```
@@ -120,7 +123,7 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
  5) Now run the switching power netlist such as `1bitadder_pwr.cir` 
  
    ```
-    $ ngspice inv_pwr.cir
+    $ ngspice 1bitadder_pwr.cir
    ```
  6) The step voltage of any given time interval (here 2ns) is the average switching power. This step voltage is almost same for each timeperiod interval.
  
@@ -128,20 +131,20 @@ Here are the steps for circuits simulation and run tcl codes to obtain power val
      
   <img align="center" width="500" src="/Images/1bitadder_avgpwr.JPG">
   
- 7) To get leakage power value of CMOS Inverter
+ 7) To get leakage power value of 1-bit fast adder
 
 ```
  $ ngspice 1bitadder_lpwr.cir 
 ```
    
-  **Leakage Power of CMOS Inverter**
+  **Leakage Power of 1-bit adder**
   
    <img align="center" width="500"  src="/Images/1bitadder_lkgpwr.JPG">
  
  ## Circuits Power Values 
  The switching power and leakage power values calculated for different circuits is presented in an excel sheet *Circuits power values*.
  
- **Circuits power values**
+ **Circuits power table**
  
  <img align="center" width="600"  src="/Images/Circuits_powervalues.JPG">
  
