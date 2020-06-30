@@ -14,7 +14,7 @@ Table of contents
    * [Steps to run Local files](#steps-to-run-local-files)
       * [CMOS Inverter](#cmos-inverter)
       * [One-bit Fast Adder](#one-bit-fast-adder)
-   * [Comparing Power Tools](#comparing-power-tools)
+   * [Circuits Power Values](#circuits-power-values)
    * [SetUp for NI Multisim in windows](#setup-for-ni-multisim-in-windows)
    * [Contact Information](#contact-information)
 <!--te-->
@@ -56,31 +56,8 @@ If already not installed, open terminal and enter `sudo apt-get install tcl` to 
   
 # Steps to run Local files
 First download or clone this repository `git clone https://github.com/yalamanchilivahini5/intern_poweranalysis_TCL.git`
+To see circuit diagrams of *inverter* and *1-bit fast adder circuit*, Go to `Images`and see *inv_ckt.jpg* and *1bitadder_ckt.jpg*
 Here are the steps for circuits simulation and run tcl codes to obtain power values.
-
-#### Direct simulation from code
-Without entering into shell, from TCL code one can run netlist codes.
-1. Go to Ngspice power folder
-
-```
-$ cd Ngspice\ power/
-```
-
-2. Run TCL code *spicelaunch.tcl*
-
-```
-$ tclsh spicelaunch.tcl
-```
-
-3. Enter the netlist file with extension `.cir` which has to be simulated like `inv_wr.cir` 
-4. To get average value, Run TCL code `avgpwr.tcl`
-
-```
-$ tclsh avgpwr.tcl
-```
-
-5. Enter the output text file name with `.txt` extension written in simulated file like `outinv.txt`
-6. Average power value is displayed.
 
 ### CMOS Inverter
  1) Go to 'NGspice power folder' to run simulations. 
@@ -89,43 +66,30 @@ $ tclsh avgpwr.tcl
    ```
  2)  Run inverter Netlist to get output waveforms.
    ```
-   $ ngspice inv_wr.cir
+   $ ngspice inv.cir
    ```
-   **Inverter Transient analysis and power plot**    
+   **Inverter Transient analysis**    
     
-   <img align="center" width="500"  src="/Images/inv_tran_pwr.JPG">
+   <img align="center" width="500"  src="/Images/inv_inout.JPG">
   
- 3) The netlist writes output data into text file namely *`outinv.txt`*. 
-  To check text file  
-  ```
-  $ ls -ltr
-  ```
-  **Checking output text file in directory**
-     
-   <img align="center" width="500"  src="/Images/inv_outfile.JPG">
-  
- 4) To find average power run TCL code
-    ```
-    $ tclsh avgpwr.tcl
-    ``` 
- 5)  Enter the output file name that occurs afer ngspice simulation. Here `outinv.txt`
- 6)  Average value is displayed.
-    
-   **Average power from TCL code**
-    
-   <img align="center" width="500"  src="/Images/inv_tclpwr.JPG">
-    
- 7) To get average power directly from SPICE simulation,
+ 3) To get steps for calculating average switching power and leakage power, run TCL code `usage.tcl` and enter required values.
+   ```
+   $ tclsh usage.tcl
+   ```
+
+ 4) Modify the netlist and save switching power netlist and leakage power netlist into two individual files.
+ 5) Now run the switching power netlist such as `inv_pwr.cir` 
  
- ```
-  $ ngspice inv_pwr.cir
-  ```
-   
-   **Voltage at 20ns gives average power**   
+   ```
+    $ ngspice inv_pwr.cir
+   ```
+ 6) The step voltage of any given time interval (here 20ns) is the average switching power. This step voltage is almost same for each timeperiod interval.
+ 
+   **Voltage step of 20ns gives average switching power**   
      
   <img align="center" width="500" src="/Images/inv_avgpwr.JPG">
   
- 8) To get leakage power value of CMOS Inverter
+ 7) To get leakage power value of CMOS Inverter
 
 ```
  $ ngspice inv_lpwr.cir 
@@ -137,42 +101,49 @@ $ tclsh avgpwr.tcl
   
   
  ### One-bit Fast Adder 
-  Follow same steps to run simulation of '1-bit fast adder'. 
+  Follow same steps to run any other simulation. Here is another circuit '1-bit fast adder'. 
   1) Go to 'NGspice power folder' to run simulations. 
    `$ cd Ngspice\ power/`
  2)  Run 1-bit adder Netlist to get output waveforms.
-   `$ ngspice 1bitadder_wr.cir`  
+   `$ ngspice 1bitadder.cir`  
  
    **Inputs A, B, Cin and Outputs S, Cout**  
  
- <img align="center" width="900" src="/Images/1bitadder_inout.JPG">  
- 
-  **Power plot**
+    <img align="center" width="900" src="/Images/1bitadder_inout.JPG">  
   
-  <img align="center" width="600"  src="/Images/1bitadder_pwr.JPG">
-  
- 3) The netlist writes output data into text file namely **outadder.txt**. 
-  To check text file  `$ ls -ltr` 
-  
-   **Checking output text file in directory**
-   
-   <img align="center" width="500"  src="/Images/1bitadder_outfile.JPG">
-  
- 4) To find average power run TCL code
-    `$ tclsh avgpwr.tcl`  
- 5)  Enter the output file name that occurs afer ngspice simulation. Here `outadder.txt`
- 6) Average value is displayed with optimization suggestion. 
+  3) To get steps for calculating average switching power and leakage power, run TCL code `usage.tcl` and enter required values.
+   ```
+   $ tclsh usage.tcl
+   ```
 
-**Average power from TCL code**
+ 4) Modify the netlist and save switching power netlist and leakage power netlist into two individual files.
+ 5) Now run the switching power netlist such as `1bitadder_pwr.cir` 
  
- <img align="center" width="500"  src="/Images/1bitadder_tclpwr.JPG">
+   ```
+    $ ngspice inv_pwr.cir
+   ```
+ 6) The step voltage of any given time interval (here 2ns) is the average switching power. This step voltage is almost same for each timeperiod interval.
  
- ## Comparing Power Tools 
- The comparison of this TCL tool and Python tool is presented in an excel sheet *Comparing power tools_charu and vahini*.
+   **Voltage step of 2ns gives average switching power**   
+     
+  <img align="center" width="500" src="/Images/1bitadder_avgpwr.JPG">
+  
+ 7) To get leakage power value of CMOS Inverter
+
+```
+ $ ngspice 1bitadder_lpwr.cir 
+```
+   
+  **Leakage Power of CMOS Inverter**
+  
+   <img align="center" width="500"  src="/Images/1bitadder_lkgpwr.JPG">
  
- **Comparison table of power tools**
+ ## Circuits Power Values 
+ The switching power and leakage power values calculated for different circuits is presented in an excel sheet *Circuits power values*.
  
- <img align="center" width="600"  src="/Images/Comparing_powertools.JPG">
+ **Circuits power values**
+ 
+ <img align="center" width="600"  src="/Images/Circuits_powervalues.JPG">
  
   
 SetUp for NI Multisim in windows
