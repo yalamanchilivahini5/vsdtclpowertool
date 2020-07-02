@@ -114,7 +114,7 @@ incr i
 set avgpwr [expr $sum1 - $sum2]
 
 if {$avgpwr < 0} {
- puts "Error: Couldn't find the power for given timeperiod or no corresponding entries in output file"
+ puts "Error: Couldn't find the power for given timeperiod -- no corresponding entries in output file"
  }
 puts "Average Switching power is $avgpwr"
 
