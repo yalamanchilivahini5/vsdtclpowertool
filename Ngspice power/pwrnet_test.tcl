@@ -108,13 +108,15 @@ incr i
 #setting the time period as 	
  set sum2 [lindex [lindex $inputList 0] 1]
 	
-#puts $sum1  
-#puts $sum2
+	
+	# puts $sum1  
+	# puts $sum2
 set avgpwr [expr $sum1 - $sum2]
 
 if {$avgpwr < 0} {
- puts "Error: Couldn't find the power for given timeperiod -- no corresponding entries in output file"
- }
+ puts "\033\[31mError:Couldn't find the power for given timeperiod -- no corresponding entries in output file\033\[0m"
+ } else {
 puts "Average Switching power is $avgpwr"
+}
 
 close $FileInput
