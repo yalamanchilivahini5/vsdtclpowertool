@@ -11,7 +11,7 @@ Table of contents
    * [Table of contents](#table-of-contents)
    * [Setup for NGSPICE](#setup-for-ngspice)
    * [Setup to run TCL code](#setup-to-run-tcl-code)
-   * [Steps to run Local files](#steps-to-run-local-files)
+   * [Steps to run Repository files](#steps-to-run-repository-files)
       * [CMOS Inverter](#cmos-inverter)
       * [One-bit Fast Adder](#one-bit-fast-adder)
    * [Circuits Power Values](#circuits-power-values)
@@ -54,7 +54,7 @@ If already not installed, open terminal and enter `sudo apt-get install tcl` to 
   
   ####  ***Note: These TCL codes are just for basic calculation, not full-pledged codes.*
   
-# Steps to run Local files
+# Steps to run Repository files
 - First download or clone this repository `git clone https://github.com/yalamanchilivahini5/intern_poweranalysis_TCL.git`   
 - To see circuit diagrams of *inverter* and *1-bit fast adder circuit*, Go to `Images`and see *inv_ckt.jpg* and *1bitadder_ckt.jpg*   
 - Here are the steps for circuits simulation and run tcl codes to obtain power values.
@@ -64,7 +64,7 @@ If already not installed, open terminal and enter `sudo apt-get install tcl` to 
    ```
     $ cd Ngspice\ power/
    ```
- 2)  Run inverter Netlist to get output waveforms.
+ 2) (optional step) Run inverter Netlist to get output waveforms and then exit from ngspice shell.
    ```
    $ ngspice inv.cir
    ```
@@ -81,22 +81,30 @@ If already not installed, open terminal and enter `sudo apt-get install tcl` to 
    <img align="center" width="500"  src="/Images/usagetcl.jpg">
   
  4) Modify the netlist and save switching power netlist and leakage power netlist into two individual files.
- 5) Now run the switching power netlist such as `inv_pwr.cir` 
+ 5) Now run the switching power netlist such as `inv_pwr.cir`and then exit from ngspice shell. 
  
    ```
-    $ ngspice inv_pwr.cir
+    $ ngspice inv_wr.cir
    ```
- 6) The step voltage of any given time interval (here 20ns) is the average switching power. This step voltage is almost same for each timeperiod interval.
  
    **Voltage step of 20ns gives average switching power**   
      
   <img align="center" width="500" src="/Images/inv_avgpwr.JPG">
   
- 7) To get leakage power value of CMOS Inverter
+ 6) A text file is generated after running the netlist file. Here `outinv.txt`  
+ 7) To get switching power, run `pwrnet_text.tcl`
+  ```
+  $ tclsh pwrnet_test.tcl
+  ```
+ **Average switching power of inverter**
+ 
+  <img align="center" width="500"  src="/Images/inv_pwr_tcl.JPG">
+ 
+ 8) To get leakage power value of CMOS Inverter
 
-```
- $ ngspice inv_lpwr.cir 
-```
+  ```
+   $ ngspice inv_lpwr.cir 
+  ```
    
   **Leakage Power of CMOS Inverter**
   
@@ -107,7 +115,7 @@ If already not installed, open terminal and enter `sudo apt-get install tcl` to 
   Follow same steps to run any other simulation. Here is another circuit '1-bit fast adder'. 
   1) Go to 'NGspice power folder' to run simulations. 
    `$ cd Ngspice\ power/`
- 2)  Run 1-bit adder Netlist to get output waveforms.
+ 2) (optional step) Run 1-bit adder Netlist to get output waveforms and then exit from ngspice shell.
    `$ ngspice 1bitadder.cir`  
  
    **Inputs A, B, Cin and Outputs S, Cout**  
@@ -120,26 +128,35 @@ If already not installed, open terminal and enter `sudo apt-get install tcl` to 
    ```
 
  4) Modify the netlist and save switching power netlist and leakage power netlist into two individual files.
- 5) Now run the switching power netlist such as `1bitadder_pwr.cir` 
+ 5) Now run the switching power netlist such as `1bitadder_pwr.cir` and then exit from ngspice shell. 
  
    ```
-    $ ngspice 1bitadder_pwr.cir
+    $ ngspice 1bitadder_wr.cir
    ```
- 6) The step voltage of any given time interval (here 2ns) is the average switching power. This step voltage is almost same for each timeperiod interval.
+ 6) A text file is generated after running the netlist file. Here `outadder.txt`
  
    **Voltage step of 2ns gives average switching power**   
      
   <img align="center" width="500" src="/Images/1bitadder_avgpwr.JPG">
   
- 7) To get leakage power value of 1-bit fast adder
+ 
+ 7) To get switching power, run `pwrnet_text.tcl`
+  ```
+  $ tclsh pwrnet_test.tcl
+  ```
+ **Average switching power of 1-bit adder**
+ 
+  <img align="center" width="500"  src="/Images/1bitadder_pwr_tcl.JPG">
+ 
+ 8) To get leakage power value of 1-bit fast adder
 
-```
- $ ngspice 1bitadder_lpwr.cir 
-```
+  ```
+  $ ngspice 1bitadder_lpwr.cir 
+  ```
    
   **Leakage Power of 1-bit adder**
   
-   <img align="center" width="500"  src="/Images/1bitadder_lkgpwr.JPG">
+   <img align="center" width="400"  src="/Images/1bitadder_lkgpwr.JPG">
  
  ## Circuits Power Values 
  The switching power and leakage power values calculated for different circuits is presented in an excel sheet *Circuits power values*.
