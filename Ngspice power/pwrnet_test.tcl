@@ -108,9 +108,8 @@ incr i
 #setting the time period as 	
  set sum2 [lindex [lindex $inputList 0] 1]
 	
-	
-	puts $sum1  
-	puts $sum2
+#puts $sum1  
+#puts $sum2
 set avgpwr [expr $sum1 - $sum2]
 
 if {$avgpwr < 0} {
