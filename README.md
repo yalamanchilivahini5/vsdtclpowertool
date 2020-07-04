@@ -129,7 +129,7 @@ If already not installed, open terminal and enter `sudo apt-get install tcl` to 
    ```
  2) (optional step) Run desired circuit Netlist(here *1bit adder*) to get output waveforms and then exit from ngspice shell.
    ```
-   $ ngspice inv.cir
+   $ ngspice 1bitadder.cir
    ```
    **1-bit adder Inputs A, B, Cin and Outputs S, Cout **    
     
