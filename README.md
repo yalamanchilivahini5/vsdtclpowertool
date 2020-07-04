@@ -185,6 +185,7 @@ If already not installed, open terminal and enter `sudo apt-get install tcl` to 
    
  ## Circuits Power Values 
  The switching power and leakage power values calculated for different circuits is presented in an excel sheet *Circuits power values*.
+ Also there is a power tools comparision presented in excel sheet *Comparing power tools_charu and vahini*.
  
  **Circuits power table**
  
