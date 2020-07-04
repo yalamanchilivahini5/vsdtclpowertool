@@ -59,6 +59,10 @@ If already not installed, open terminal and enter `sudo apt-get install tcl` to 
 - To see circuit diagrams of *inverter* and *1-bit fast adder circuit*, Go to `Images`and see *inv_ckt.jpg* and *1bitadder_ckt.jpg*   
 - Here are the steps for circuits simulation and run tcl codes to obtain power values.
 
+ - Here is the brief usage picture to run these codes.
+ 
+ <img align="center" width="500"  src="/Images/usagepic.jpg">
+
 ### CMOS Inverter
  1) Go to 'NGspice power folder' to run simulations. 
    ```
