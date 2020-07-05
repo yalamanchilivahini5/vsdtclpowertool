@@ -58,6 +58,7 @@ If already not installed, open terminal and enter `sudo apt-get install tcl` to 
 - First download or clone this repository `git clone https://github.com/yalamanchilivahini5/intern_poweranalysis_TCL.git`   
 - To see circuit diagrams of *inverter* and *1-bit fast adder circuit*, Go to `Images`and see *inv_ckt.jpg* and *1bitadder_ckt.jpg*   
 - Here are the steps for circuits simulation and run tcl codes to obtain power values.
+- Make sure that netlist file and power codes should be present in same folder.
 
  - Here is the brief usage picture to run these codes.
  
