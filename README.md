@@ -1,8 +1,6 @@
 Power Analysis Tool using TCL
 =============================
-This project is trying to develop an open source power estimation tool. It mainly focuses on average switching power and leakage power.
-The analysis is based on Tool Command Language (TCL) code and takes SPICE netlist generated output text file and fewer parameters 
-as inputs and gives required power values.
+This project is trying to develop an open source power estimation tool. It mainly focuses on average switching power and leakage power. The analysis is based on Tool Command Language (TCL) code and takes SPICE netlist and fewer parameters as inputs and gives required power values.
 
 Table of contents
 =================
@@ -15,9 +13,15 @@ Table of contents
       * [CMOS Inverter](#cmos-inverter)
       * [One-bit Fast Adder](#one-bit-fast-adder)
    * [Circuits Power Values](#circuits-power-values)
-   * [SetUp for NI Multisim in windows](#setup-for-ni-multisim-in-windows)
    * [Contact Information](#contact-information)
 <!--te-->
+
+# Power Tool Strategy
+  Power estimation of an circuit is done using an simple formula power P = I X V. Average swithing power is calculated as Iavg xVDD and 
+  leakage ppower is calculated as Ileakage x VDD. 
+  
+  
+  <img align="center" width="500"  src="/Images/kangcir.JPG">
 
 Setup for NGSPICE
 ==================
@@ -161,39 +165,6 @@ Most of linux/Unix/Mac OS systems have inbuilt tcl. For windows OS, one must hav
  <img align="center" width="600"  src="/Images/Circuits_powervalues.JPG">
  
   
-SetUp for NI Multisim in windows
-=================================
-1) Download NI Multisim 14.1 from https://softfamous.com/ni-multisim/download/
-2) Click on `Download from ni.com -> GET STUDENT DOWNLOAD  ` 
-<br/>
-  <img align ="left" src="https://user-images.githubusercontent.com/66675990/84494289-d9744800-acc6-11ea-91a3-938bc8146741.JPG" width= "300" > 
- <img  src="https://user-images.githubusercontent.com/66675990/84496533-b9df1e80-acca-11ea-9606-0a4dd1d316c9.JPG" width="300" >
-   <br/>  
-        
-3) Unzip the compressed folder and save in preferred folder.   <br/>     
-4) Open `setup.exe` file and install.
-
-**Note: NI Multisim can be downloaded only on windows OS. For MAC OS or LINUX users, Windows OS have to be installed using virtual machine or can use online [MULTISIM LIVE](https://www.multisim.com/) or can run using [WINE](https://www.winehq.org/)
-
-## Steps to draw and run schematic on NI multisim in windows  
-1) Open NI Multisim 14.1 from start menu
-2) `File -> New -> Create `
-3) Draw schematic and save(Ctrl +S)
-4) Schematic file will be saved in .ms14 format
-5) To open file whch is already created
-   `File -> Open -> choose schematic file in .ms14 extension` 
-6) Go to` Simulate -> Analyses and simulation` 
-7) Choose required analysis and enter variables and choose parameters to be displayed .
-8) To run 
-   `Simulate -> Run `
-   <img align ="right" width="200" src="/Multisim_simulation/4bit adder multisim/4bit fast adder simckt 1.JPG"> 
-   
-9) Outputs are shown on simulation window.
-10) For spice netlist
-   `Transfer -> Export SPICE Netlist -> Save` (save in .cir extension)   
-   
-   For 4-bit fast adder circuit shown in figure, Go to `Multisim_simulation -> 4bit adder multisim`  from this repository
-   and run `4bitfastadder_test.ms14`  simulation. 
    
 
  
