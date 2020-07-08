@@ -7,6 +7,7 @@ Table of contents
 <!--ts-->
    * [Power Analysis Tool using TCL](#power-analysis-tool-using-tcl)
    * [Table of contents](#table-of-contents)
+   * [Power Tool Strategy](#power-tool-strategy)
    * [Setup for NGSPICE](#setup-for-ngspice)
    * [Setup for TCL shell](#setup-for-tcl-shell)
    * [Steps to run Repository files](#steps-to-run-repository-files)
@@ -17,34 +18,31 @@ Table of contents
 <!--te-->
 
 # Power Tool Strategy
-  Power estimation of an circuit is done using an simple formula power P = I X V. Average swithing power is calculated as Iavg xVDD and 
-  leakage ppower is calculated as Ileakage x VDD. 
+  Power estimation of an circuit is done using an simple formula power P = I X V. 
+  - Average swithing power is calculated as product of average switching current and VDD i.e., Iavg xVDD.
+  - Leakage ppower is calculated as product of leakage current and VDD i.e., Ileakage x VDD. 
+ ######
+ The main concept used for power calculation is creating a current controlled current source and taking average power which equals to 
+ voltage step across the current source  during the time period. The voltage step is same for each time period. For clear information go through 
+ [kang pg 245-248](https://github.com/yalamanchilivahini5/VSD-opensource-TCL-power-tool/blob/master/Power%20Information/cmos%20digital%20circuits%20Kang.pdf)
   
-  
-  <img align="center" width="500"  src="/Images/kangcir.JPG">
+  **Basic Idea on calculating power**
+  <img align="center" width="500"  src="/Images/kangcir_eqn.jpg">
 
-Setup for NGSPICE
-==================
- [Ngspice](http://ngspice.sourceforge.net/devel.html) is an open source Spice simulator which gives outputs from SPICE Netlist
- that is saved with *.cir* extension. 
- - For installing ngspice in ubuntu
- `$ sudo apt-get install ngspice`
- - To enter into Ngspice shell 
-  `$ ngspice`
- - To run code
-  `ngspice 1 -> source <filename>.cir`
- - To plot curves
-  ` ngspice 2 -> plot <vector>`
- - To come out of Ngspice shell
-  ` ngspice 3 -> exit` or `ngspice 3 -> quit`
-  
-Setup for TCL shell
-====================
-Most of linux/Unix/Mac OS systems have inbuilt tcl. For windows OS, one must have tcl compiler like Active TCL.
-- If already not installed, open terminal and enter `sudo apt-get install tcl` to install TCL.
-- To run tcl code, open terminal and enter `$ tclsh <filename>.tcl`
+# Power Tool Usage
 
-# Steps to run Repository files
+## Dependencies to run this power tool
+ TCL Power Tool mainly works on NGSPICE and TCL shell. Here are steps for setup of required open source tools.
+ - For installing ngspice 
+  ```
+  $ sudo apt-get install ngspice
+  ```
+ - Most of Linux/Unix systems have inbuilt tcl shell. If not installed prior then for installing TCL shell
+ ```
+ $ sudo apt-get install tcl
+ ```
+
+# Steps to run TCL Power Tool
 - First download or clone this repository `git clone https://github.com/yalamanchilivahini5/intern_poweranalysis_TCL.git`   
 - To see circuit diagrams of *inverter* and *1-bit fast adder circuit*, Go to `Images`and see *inv_ckt.jpg* and *1bitadder_ckt.jpg*   
 - Here are the steps for circuits simulation and run tcl codes to obtain power values.
