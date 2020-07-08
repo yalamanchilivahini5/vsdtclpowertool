@@ -87,7 +87,7 @@ Table of contents
    ```
    $ ngspice 1bitadder.cir
    ```
-   **1-bit fast adder Inputs A, B, Cin and Outputs S, Cout **    
+   **1-bit fast adder Inputs A, B, Cin and Outputs S, Cout**    
     
    <img align="center" width="900" src="/Images/1bitadder_inout.JPG">
   
@@ -115,7 +115,7 @@ Table of contents
   - Two files namely *switchingpower_netlist.cir* and *leakagepower_netlist.cir* are added after running whole power code.
     These are modified netlist files for calculating average switching power and leakage power respectively.
  
- 1) To view waveforms for modified netlist, run these files (after running desired netlist) using ngspice by commenting quit statement.
+  To view waveforms for modified netlist, run these files (after running desired netlist) using ngspice by commenting quit statement.
  
    **Commenting quit statement in netlist**
  
