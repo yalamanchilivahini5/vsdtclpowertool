@@ -1,6 +1,6 @@
 Power Analysis Tool using TCL
 =============================
-This project is trying to develop an open source power estimation tool. It mainly focuses on average switching power and leakage power. The analysis is based on Tool Command Language (TCL) code and takes SPICE netlist and fewer parameters as inputs and gives required power values.
+This project is trying to develop an open source power estimation tool. It mainly focuses on average switching power and leakage power. The analysis is based on Tool Command Language (TCL) code and takes SPICE netlist and fewer parameters as inputs and gives required power values along with modified netlist files.
 
 Table of contents
 =================
@@ -10,8 +10,9 @@ Table of contents
    * [Power Tool Strategy](#power-tool-strategy)
    * [Inputs for TCL Power Tool](#inputs-for-tcl-power-tool)
    * [TCL Power Tool with examples](#tcl-power-tool-with-examples)
-   * [Power Tool Outputs Interpretation](#power-tool-outputs-interpretation)
-   * [Power Tool Usage](#power-tool-usage)
+   * [TCL Power Tool Outputs Interpretation](#tcl-power-tool-outputs-interpretation)
+   * [Future Work](#future-work)
+   * [TCL Power Tool Usage](#tcl-power-tool-usage)
       * [Dependencies](#dependencies)
       * [Steps to run TCL Power Tool](#steps-to-run-tcl-power-tool)
    * [Circuits Power Values](#circuits-power-values)
@@ -29,7 +30,7 @@ Table of contents
   
   **Basic concept used for calculating power**
   
-  <img align="center" width="500"  src="/Images/kangcir_eqn.jpg">
+  <img align="center" width="800"  src="/Images/kangcir_eqn.jpg">
 
 # Inputs for TCL Power Tool
  The main input for power tool is spice netlist file. Some more inputs present in netlist are taken while executing code such as 
@@ -108,9 +109,9 @@ Table of contents
    
   <img align="center" width="500"  src="/Images/1bitadder_tcl_lkgpwr.JPG">
  
- ## Power Tool Outputs Interpretation
+ ## TCL Power Tool Outputs Interpretation
   
-  - All output power unit is ***watt***.
+  - Outputs power values dispalyed are in ***watt***.
   - Two files namely *switchingpower_netlist.cir* and *leakagepower_netlist.cir* are added after running whole power code.
     These are modified netlist files for calculating average switching power and leakage power respectively.
  
@@ -153,7 +154,11 @@ Table of contents
  $ ngspice leakagepower_netlist.cir
  ```
 
-# Power Tool Usage
+# Future Work
+ The designed power tool only works for single supply voltage (VDD) circuits and it assumes there is atleast one switching activity in the given timeperiod.
+ Also it is tested for osu018 technology. Hence it can be extended for multiple supply circuits and for various technologies.
+
+# TCL Power Tool Usage
 
 ### Dependencies
  TCL Power Tool mainly works on NGSPICE and TCL shell. Here are steps for setup of required open source tools.
@@ -209,12 +214,6 @@ Table of contents
  ### Author
  
  YALAMANCHILI VAHINI
- 
- ### Acknowledgemnets
- - Thanks to [Dr. Sudhakar S. Mande](https://ieeexplore.ieee.org/author/37658692300) who helped a lot in power calculation concepts.
- - Thanks to [Philipp Gühring](https://www.futureware.at/ephilipp.htm) who helped in development of power tool.
- - Thanks to [Kunal P Ghosh](https://www.vlsisystemdesign.com/About-Me.php) for his constant support.
- - Thanks to [Dr. Gaurav Trivedi](http://www.iitg.ac.in/trivedi/) for his constant support.
  
 Contact Information
 ====================
