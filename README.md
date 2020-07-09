@@ -173,10 +173,6 @@ Table of contents
  ***Note: Circuit Netlist file, include files of netlist(if any) and TCL power code must be present in same folder.***
 
 ## Steps to run TCL Power Tool 
-
-- Here is the brief usage picture to run these codes.
- 
- <img align="center" width="700"  src="/Images/usage pic final.jpg">
  
  Here are steps to run TCL power tool:
  
@@ -190,17 +186,22 @@ Table of contents
   ```
   $ cd Ngspice\ power/
   ```
-  3) Save the netlist file and any included files in the same folder in which the power code is present.
+  3) Copy desired netlist files and any included files in the "Ngspice power" folder or copy "power_modified.tcl"in which netlist files and included files are present.
+  4) Make sure that netlist file has **.tran, run and .endc** statements in it.
+  5) Here is the brief usage picture to run these codes.
+  
+   <img align="center" width="700"  src="/Images/usage pic final.jpg">
+ 
   4) To run code, 
   ```
   $ tclsh power_modified.tcl
   ```
-  5) Enter netlist file name, supply voltage node and supply voltage name and press enter.
-  6) Enter 1 for calculating average switching power and 2 for calculating leakage power.
-  7) If choice is average switching power, enter further details such as supply voltage value and minimum time period of circuit.
-  8) The average switching power is displayed and its unit is ***watt***.
-  9) If choice is leakage power, enter few more details such as no.of time varying inputs and their values.
- 10) The leakage power is displayed and its unit is ***watt***.
+  6) Enter netlist file name, supply voltage node and supply voltage name in circuit netlist file and press enter.
+  7) Enter 1 for calculating average switching power and 2 for calculating leakage power.
+  8) If choice is average switching power, enter further details such as supply voltage value and minimum time period of circuit.
+  9) The average switching power is displayed and its unit is ***watt***.
+ 10) If choice is leakage power, enter few more details such as no.of time varying inputs and their values.
+ 11) The leakage power is displayed and its unit is ***watt***.
    
  ## Circuits Power Values 
  The switching power and leakage power values calculated for different circuits is presented in an excel sheet *Circuits power values*.
