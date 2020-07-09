@@ -184,7 +184,7 @@ Table of contents
   
   ```
   $ sudo apt install -y git
-  $ https://github.com/yalamanchilivahini5/VSD-opensource-TCL-power-tool.git
+  $ git clone https://github.com/yalamanchilivahini5/VSD-opensource-TCL-power-tool.git
   ```
   2) To get power code present in `Ngspice Power` 
   ```
