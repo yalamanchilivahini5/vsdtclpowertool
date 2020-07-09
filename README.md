@@ -186,7 +186,8 @@ Table of contents
   ```
   $ cd Ngspice\ power/
   ```
-  3) Copy desired netlist files and any included files in the "Ngspice power" folder or copy "power_modified.tcl"in which netlist files and included files are present.
+  3) Copy desired netlist files and any included files in the `Ngspice power` folder or copy `power_modified.tcl` to folder 
+  in which netlist files and included files are present.
   4) Make sure that netlist file has **.tran, run and .endc** statements in it.
   5) Here is the brief usage picture to run these codes.
   
@@ -199,9 +200,9 @@ Table of contents
   6) Enter netlist file name, supply voltage node and supply voltage name in circuit netlist file and press enter.
   7) Enter 1 for calculating average switching power and 2 for calculating leakage power.
   8) If choice is average switching power, enter further details such as supply voltage value and minimum time period of circuit.
-  9) The average switching power is displayed and its unit is ***watt***.
- 10) If choice is leakage power, enter few more details such as no.of time varying inputs and their values.
- 11) The leakage power is displayed and its unit is ***watt***.
+  9) The average switching power is displayed in both ***watt*** and ***uW***.
+ 10) If choice is leakage power, enter few more details such as no.of time varying inputs such as pulse, sine and their names.
+ 11) The leakage power is displayed in both ***watt*** and ***uW***.
    
  ## Circuits Power Values 
  The switching power and leakage power values calculated for different circuits is presented in an excel sheet *Circuits power values*.
