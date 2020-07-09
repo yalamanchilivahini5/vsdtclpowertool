@@ -284,7 +284,7 @@ set avgpwr [expr $sum1 - $sum2]
 if {$avgpwr < 0} {
  puts "\n\033\[31mError:Couldn't find the power for given timeperiod -- no corresponding entries for power values.\033\[0m"
  } else {
-puts "\n\033\[33mAverage Switching power is $avgpwr\033\[0m"
+puts "\n\033\[33mAverage Switching power in watt is $avgpwr\033\[0m"
 }
 close $FileInput
 
@@ -364,7 +364,7 @@ puts "Executing ngspice..."
 exec -ignorestderr -- ngspice leakagepower_netlist.cir >leakage.txt
 puts "Executation of ngspice done."
 
-puts "\n\033\[033mLeakage power is the printed value of I(Vnet)*V($VDD_node):\033\[0m"
+puts "\n\033\[033mLeakage power in watt is the printed value of I(Vnet)*V($VDD_node):\033\[0m"
 set leakres [open "leakage.txt" r]
    while {[gets $leakres line] >= 0} {
             if [regexp -- "vnet" $line] {
