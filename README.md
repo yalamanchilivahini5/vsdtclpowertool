@@ -72,7 +72,7 @@ Table of contents
   
    **Leakage power of inverter from TCL code**
    
-  <img align="center" width="500"  src="/">
+  <img align="center" width="500"  src="/Images/inv_tcl_lkgpwr.JPG">
   
  8) A netlist file namely `leakagepower_netlist.cir` is added to directory.
  
