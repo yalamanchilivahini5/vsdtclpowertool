@@ -65,7 +65,7 @@ Table of contents
  
   **Average Switching power of inverter from TCL code**
  
-   <img align="center" width="500"  src="/Images/inv_tcl_avgpwr.JPG">
+   <img align="center" width="500"  src="/Images/inv_tcl_lkgpwr.JPG">
    
  6) Additional file namely `switchingpower_netlist.cir` is added into the directory.
  7) If choice is leakage power, enter required data and press enter.
