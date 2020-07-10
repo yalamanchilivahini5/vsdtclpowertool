@@ -182,7 +182,7 @@ Table of contents
   $ sudo apt install -y git
   $ git clone https://github.com/yalamanchilivahini5/VSD-opensource-TCL-power-tool.git
   ```
-  2) To get power code present in `Ngspice Power` 
+  2) To get power code present in `Ngspice Power`.(One can directly open terminal from 'Ngspice power' folder also) 
   ```
   $ cd Ngspice\ power/
   ```
@@ -201,7 +201,7 @@ Table of contents
   7) Enter 1 for calculating average switching power and 2 for calculating leakage power.
   8) If choice is average switching power, enter further details such as supply voltage value and minimum time period of circuit.
   9) The average switching power is displayed in both ***watt*** and ***uW***.
- 10) If choice is leakage power, enter few more details such as no.of time varying inputs such as pulse, sine and their names.
+ 10) If choice is leakage power, enter few more details such as no.of time varying inputs such as pulse, sine and their names. If there are no time varying inputs, enter 0.
  11) The leakage power is displayed in both ***watt*** and ***uW***.
    
  ## Circuits Power Values 
