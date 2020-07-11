@@ -54,7 +54,7 @@ Table of contents
    ```
    **Inverter Transient analysis**    
     
-   <img align="center" width="500"  src="/Images/inv_inout.JPG">
+   <img align="center" width="500"  src="/Images/inv_inout_bg_w.JPG">
   
  3) To get average switching power and leakage power, run TCL code `power_modified.tcl` and enter required values.
    ```
@@ -89,7 +89,7 @@ Table of contents
    ```
    **1-bit fast adder Inputs A, B, Cin and Outputs S, Cout**    
     
-   <img align="center" width="900" src="/Images/1bitadder_inout.JPG">
+   <img align="center" width="900" src="/Images/1bitadder_inout_bg_w.JPG">
   
  3) To get average switching power and leakage power, run TCL code `power_modified.tcl` and enter required values.
    ```
@@ -129,7 +129,7 @@ Table of contents
    
    Voltage step for each 20ns is almost same and the value equals average switching power.
  
-  <img align="center" width="500"  src="/Images/inv_avgpwr.JPG">
+  <img align="center" width="500"  src="/Images/inv_avgpwr_bg_w.JPG">
  
  ***Leakage Power Netlist of inverter***
  
@@ -146,7 +146,7 @@ Table of contents
    
    Voltage step for each 2ns is almost same and the value equals average switching power.
  
-  <img align="center" width="500"  src="/Images/1bitadder_avgpwr.JPG">
+  <img align="center" width="500"  src="/Images/1bitadder_avgpwr_bg_w.JPG">
  
  ***Leakage Power Netlist of 1-bit fast adder***
  
