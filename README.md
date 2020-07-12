@@ -46,7 +46,7 @@ Table of contents
 ### CMOS Inverter
  1) Go to 'NGspice power folder' to run simulations (One can directly open terminal from Ngspice Power folder also). 
    ```
-    $ cd Ngspice\ power/
+    $ cd vsdtclpowertool/Ngspice\ power/
    ```
  2) (optional step) Run desired circuit Netlist(for example *inverter*) to get output waveforms and then exit from ngspice shell.
    ```
@@ -81,7 +81,7 @@ Table of contents
   
   1) Go to 'NGspice power folder' to run simulations (One can directly open terminal from Ngspice Power folder also). 
    ```
-    $ cd Ngspice\ power/
+    $ cd vsdtclpowertool/Ngspice\ power/
    ```
  2) (optional step) Run desired circuit Netlist(here *1bit adder*) to get output waveforms and then exit from ngspice shell.
    ```
@@ -184,7 +184,7 @@ Table of contents
   ```
   2) To get power code present in `Ngspice Power`.(One can directly open terminal from 'Ngspice power' folder also) 
   ```
-  $ cd Ngspice\ power/
+  $ cd vsdtclpowertool/Ngspice\ power/
   ```
   3) Copy desired netlist files and any included files in the `Ngspice power` folder or copy `power_modified.tcl` to folder 
   in which netlist files and included files are present.
