@@ -215,7 +215,7 @@ Table of contents
   
  ### Author
  
- YALAMANCHILI VAHINI
+ **YALAMANCHILI VAHINI**
  
 Contact Information
 ====================
