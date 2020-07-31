@@ -26,7 +26,7 @@ Table of contents
  ######
  The main concept used for power calculation is creating a current controlled current source and taking average power which equals to 
  voltage step across the current source ***βIvdd***  during the time period. The voltage step of ***Vnetl*** is same for each time period. 
- The value of β shown is ***Cnet*VDD/T***.
+ The value of β shown is ***Cnet*VDD/T**.
  
   
   **Basic concept used for calculating power**
