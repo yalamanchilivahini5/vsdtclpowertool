@@ -25,12 +25,12 @@ Table of contents
   - Leakage ppower is calculated as product of leakage current and VDD i.e., Ileakage x VDD. 
  ######
  The main concept used for power calculation is creating a current controlled current source and taking average power which equals to 
- voltage step across the current source  during the time period. The voltage step is same for each time period. For clear information go through 
- [kang textbook pg 245-248](https://github.com/yalamanchilivahini5/VSD-opensource-TCL-power-tool/blob/master/Power%20Information/cmos%20digital%20circuits%20Kang.pdf)
+ voltage step across the current source  during the time period. The voltage step is same for each time period. 
+ 
   
   **Basic concept used for calculating power**
   
-  <img align="center" width="800"  src="/Images/kangcir_eqn.jpg">
+  <img align="center" width="500"  src="/Images/kangckt.JPG">
 
 # Inputs for TCL Power Tool
  The main input for power tool is spice netlist file. Some more inputs present in netlist are taken while executing code such as 
