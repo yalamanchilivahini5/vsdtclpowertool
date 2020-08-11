@@ -39,7 +39,7 @@ Table of contents
  - For Average switching power, Minimum time period of circuit & Supply voltage value
  - For Leakage power calculation, No.of time varying inputs and their names.
 # TCL Power Tool with examples
-- First download or clone this repository `git clone https://github.com/yalamanchilivahini5/intern_poweranalysis_TCL.git`   
+- First download or clone this repository `git clone https://github.com/yalamanchilivahini5/vsdtclpowertool.git`   
 - To see circuit diagrams of *inverter* and *1-bit fast adder circuit*, Go to `Images`and see *inv_ckt.jpg* and *1bitadder_ckt.jpg*   
 - Here are the steps for circuits simulation and run tcl codes to obtain power values.
 - Make sure that netlist file, included files in netlist (if any) and power codes are present in same folder.
@@ -181,7 +181,7 @@ Table of contents
   
   ```
   $ sudo apt install -y git
-  $ git clone https://github.com/yalamanchilivahini5/VSD-opensource-TCL-power-tool.git
+  $ git clone https://github.com/yalamanchilivahini5/vsdtclpowertool.git
   ```
   2) To get power code present in `Ngspice Power`.(One can directly open terminal from 'Ngspice power' folder also) 
   ```
