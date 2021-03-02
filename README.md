@@ -22,7 +22,7 @@ Table of contents
 # Power Tool Strategy
   Power estimation of a circuit is done using a simple formula power P = I X V. 
   - Average swithing power is calculated as product of average switching current and VDD i.e., Iavg xVDD.
-  - Leakage ppower is calculated as product of leakage current and VDD i.e., Ileakage x VDD. 
+  - Leakage power is calculated as product of leakage current and VDD i.e., Ileakage x VDD. 
  ######
  The main concept used for power calculation is creating a current controlled current source and taking average power which equals to 
  voltage step across the current source ***βIvdd***  during the time period. The voltage step of ***Vnetl*** is same for each time period. 
